@@ -1,0 +1,51 @@
+
+body {
+  background: darkgreen; 
+}
+
+.box-wrapper {
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 3px;
+  grid-template-columns: 90px 90px 90px 90px;
+  grid-template-rows: minmax(100px, 100px) repeat(5, 90px);
+}
+
+.operation {
+  color: yellow;
+}
+
+ .btn {
+  font-size: 25px;
+  border: 1px solid blue;
+ 
+  background-color: darkgrey;
+}
+
+.btn:hover {
+  background-color: darkseagreen;
+}
+
+.window {
+  grid-column: 1 / -1;
+  background-color:darkcyan;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 60px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.window .previous-operand {
+  color: white;
+  font-size: 30px;
+}
+
+.window .current-operand {
+  color: white;
+  font-size: 50px;
+}
